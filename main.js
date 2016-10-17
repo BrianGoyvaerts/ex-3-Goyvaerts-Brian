@@ -8,7 +8,7 @@ var bustenparser = require('body-parser');
 app.use(bustenparser.urlencoded({extended:true}));
 
 
-app.get('/',function (request,response) {
+app.get('/',function (response) {
     res.send('opgave');
 });
 
@@ -27,6 +27,8 @@ app.get('/calc/:opdracht',function(request,response){
     response.send(String(uitkomst));
 })
 
-console.log('done') 
+console.log('done')
 
 app.listen(4567);
+
+
