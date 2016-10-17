@@ -1,0 +1,32 @@
+In deze oefening probeer ik een REST-based calculator te maken, als taak voor Data Distribution. 
+
+Aangezien ik geen idee had hoe aan deze taak te beginnen, heb ik het voorbeeld uit de les gebruikt als startcode: 
+    /** Created by Brian on 12/10/2016. **/
+    var express = require ("express");
+    var app = express();
+    var bustenparser = require('body-parser');
+    app.use(bustenparser.json());
+    var books = [];
+    books.push({id:1, name:"Beginning Node JS", rating: 4});
+    app.get("/books", function(request, response){
+        response.send(books);
+    }); 
+    console.log("test");
+    app.listen(4567);
+
+Ben dan ook in deze file beginnen werken. Na enkele uren, heel veel hulp van medestudenten en het internet ben ik op mijn 
+eerste commit gekomen. 
+Bij deze commit kon ik mbv postman en een key enkele challenges oplossen. 
+
+De volgende stap voor mij was om de challenge gemakkelijker in te voeren.
+Aangezien de opdracht (voor mij dan toch) vrij vaag is over de opdracht ben ik maar op zoek gegaan. 
+        --Maak een calculator, dan denk ik dat we met HTML-code, een realistische rekenmachine gaan maken. 
+        --Op www.stackoverflow.com kwam ik dan te weten dat het ook mogelijk is om de opgave in de url mee te geven. 
+
+Opnieuw kwam ik vast te zitten, dus ben ik gaan kijken voor een oplossing op www.jetbrains.com, een website aangehaald in de les. 
+Helaas, niks.... 
+
+Ik bekijk de manier van een klasgenoot waar het wel bij gelukt is... 
+credits: Peter Leriche 
+
+
