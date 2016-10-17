@@ -1,0 +1,23 @@
+In this exercise i try to make a REST-based calculator as an assignment for the course data distribution. 
+
+Because i had no clue how to begin, i started with an exercise we made in class: 
+    /** Created by Brian on 12/10/2016. **/
+    var express = require ("express");
+    var app = express();
+    var bustenparser = require('body-parser');
+    app.use(bustenparser.json());
+    var books = [];
+    books.push({id:1, name:"Beginning Node JS", rating: 4});
+    app.get("/books", function(request, response){
+        response.send(books);
+    }); 
+    console.log("test");
+    app.listen(4567);
+    
+Few hours and a lot of help from classmembers and the internet later, i came up with my first commit. 
+Using 'Postman' the API was able to do some calculating (using a key) 
+
+Next step was to make it easier to compute a challenge. After doing some research i learned from www.stackoverflow.com that it 
+is possible to type your challenge in the url. 
+I very soon realised this wasn't that easy. So i headed over to www.jetbrains.com, a site recommended in class. 
+
