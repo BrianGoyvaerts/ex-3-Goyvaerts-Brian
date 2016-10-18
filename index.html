@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+p><input id="output" type=text></p>
+<table>
+    <tr>
+        <td><button type="button" value=1 onclick="calculator.1">1</button></td>
+        <td><button type="button" value=2 onclick="calculator.2">2</button></td>
+        <td><button type="button" value=3 onclick="calculator.3">3</button></td>
+        <td><button type="button" onclick="calculator.+">+</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" value=4 onclick="calculator.4">4</button></td>
+        <td><button type="button" value=5 onclick="calculator.5">5</button></td>
+        <td><button type="button" value=6 onclick="calculator.6">6</button></td>
+        <td><button type="button" onclick="calculator.-">-</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" value=7 onclick="calculator.7">7</button></td>
+        <td><button type="button" value=8 onclick="calculator.8">8</button></td>
+        <td><button type="button" value=9 onclick="calculator.9">9</button></td>
+        <td><button type="button" onclick="calculator./">/</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="calculator.=">=</button></td>
+        <td><button type="button" value=0 onclick="calculator.0">0</button></td>
+        <td><button type="button" onclick="calculator.">.</button></td>
+        <td><button type="button" onclick="calculator.*">*</button></td>
+    </tr>
+</table>
+</body>
+<script>
+    var g1 = document.getElementById("calculator.1").value;
+    var g2 = document.getElementById("calculator.2").value;
+    var g3 = document.getElementById("calculator.3").value;
+    var g4 = document.getElementById("calculator.4").value;
+    var g5 = document.getElementById("calculator.5").value;
+    var g6 = document.getElementById("calculator.6").value;
+    var g7 = document.getElementById("calculator.7").value;
+    var g8 = document.getElementById("calculator.8").value;
+    var g9 = document.getElementById("calculator.9").value;
+    var g0 = document.getElementById("calculator.0").value;
+
+    var totaal = 0;
+</script>
+</html>
