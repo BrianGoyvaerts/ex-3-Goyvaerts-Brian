@@ -1,7 +1,10 @@
 /**
- * Created by Brian on 17/10/2016.
- */
+ * Created by Brian on 17/10/2016.*/
 var express = require("express");
+var app     = express();
+var path    = require("path");
+
+ /* var express = require("express");
 var app = express();
 var bustenparser = require('body-parser');
 
@@ -25,10 +28,14 @@ app.get('/calc/:opdracht',function(request,response){
     var opdracht = request.params.opdracht;
     var uitkomst = eval(request.params.opdracht);
     response.send(String(uitkomst));
-})
+})*/
+app.get('/',function(req,res){
+    res.sendFile(path.join(__dirname+'/index.html'));
+    //__dirname : It will resolve to your project folder.
+});
 
-console.log('done')
+app.listen(3000);
 
-app.listen(4567);
+console.log("Running at Port 3000");
 
 
